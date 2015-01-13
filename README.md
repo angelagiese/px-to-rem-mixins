@@ -16,6 +16,7 @@ Simply install or download this repo to your local computer, then either:
 </ul>
 
 <h3>LESS usage</h3>
+<p>Import into your .less file with <code>@import "px-to-rem";</code></p>
 <p>x is the pixel size needed: <code>.font-size(x)</code> and <code>.line-height(x);</code></p>
 
 <pre>
@@ -35,6 +36,7 @@ Simply install or download this repo to your local computer, then either:
 </pre>
 
 <h3>Sass usage</h3>
+<p>Import into your .scss file with <code>@import "px-to-rem";</code></p>
 <p>x is the pixel size needed: <code>@include font-size(x);</code> and <code>@include line-height(x);</code></p>
 
 <pre>
