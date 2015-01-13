@@ -34,5 +34,25 @@ Simply install or download this repo to your local computer, then either:
 }
 </pre>
 
+<h3>Sass usage</h3>
+<p>x is the pixel size needed: <code>@include font-size(x);</code> and <code>@include line-height(x);</code></p>
+
+<pre>
+.some-element {
+    @include font-size(16);
+    @include line-height(32);
+}
+</pre>
+<p>May output as:</p>
+<pre>
+.some-element {
+    font-size: 16px; 
+    font-size: 1rem;
+    line-height: 32px; 
+    line-height: 2rem;
+}
+</pre>
+
 <h2>Credit</h2>
+<p>The idea from this came from an article on <a href="http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/">CSS-Tricks</a>. That article used mixins that used rem values, however. I needed to start with pixels then convert to rem.
 <p>It would be great if you could keep credit to me in the files, plus spread the word about this repo. Thanks!</p>
