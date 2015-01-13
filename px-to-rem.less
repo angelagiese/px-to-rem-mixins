@@ -1,0 +1,17 @@
+/* px-to-rem-mixins by Angela Giese https://github.com/angelagiese/px-to-rem-mixins */
+
+// usage, x is the pixel size needed: .font-size(x); 
+.font-size(@sizeValue: 15) {
+    @remValue: @sizeValue / 16;
+    @pxValue: (@sizeValue);
+    font-size: ~"@{pxValue}px"; 
+    font-size: ~"@{remValue}rem";
+}
+
+// usage, x is the pixel size needed: .line-height(x);
+.line-height(@sizeValue: 20) {
+    @remValue: @sizeValue / 16;
+    @pxValue: (@sizeValue);
+    line-height: ~"@{pxValue}px"; 
+    line-height: ~"@{remValue}rem";
+}
